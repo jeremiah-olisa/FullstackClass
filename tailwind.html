@@ -7,12 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div
-      class="flex w-full h-screen justify-center items-center bg-linear-to-r from-cyan-500 to-blue-500"
-    >
-      <form class="flex flex-col gap-4 bg-slate-200 p-10 rounded-lg" action="">
+    <div class="flex w-full h-screen justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500">
+      <form class="flex flex-col gap-4 bg-slate-200 p-10 rounded-lg">
         <h2 class="text-2xl font-semibold text-slate-800">Login Form</h2>
-        <div class="flex flex-col gap-1"> 
+
+        <div class="flex flex-col gap-1">
           <label for="email">Email Address</label>
           <input
             type="email"
@@ -22,7 +21,8 @@
             placeholder="jeremiaholisa@gmail.com"
           />
         </div>
-        <div class="flex flex-col gap-1"> 
+
+        <div class="flex flex-col gap-1">
           <label for="password">Password</label>
           <input
             type="password"
@@ -32,7 +32,13 @@
             placeholder="P@$$w0rd"
           />
         </div>
-        <button class="bg-slate-900 animate-bounce ease-in-out text-white px-4 py-1.5 rounded-lg" type="submit">Login</button>
+
+        <button
+          class="bg-slate-900 text-white px-4 py-1.5 rounded-lg animate-bounce ease-in-out"
+          type="submit"
+        >
+          Login
+        </button>
       </form>
     </div>
   </body>
