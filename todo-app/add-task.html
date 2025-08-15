@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white min-h-screen p-6">
+    <div class="max-w-md mx-auto space-y-6">
+      <!-- Header -->
+      <header class="flex gap-3 items-center justify-center relative p-0">
+        <h3 class="font-bold text-lg">Add task</h3>
+        <a
+          href="./index.html"
+          class="fa fa-xmark absolute left-0 top-1/2 -translate-y-1/2"
+        ></a>
+      </header>
+      <!-- Form Section -->
+      <form class="flex w-full gap-4 flex-col">
+        <div class="flex flex-col gap-4">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            class="py-6 px-4 placeholder:text-2xl placeholder:font-bold rounded-md bg-gray-200"
+          />
+
+          <textarea
+            name="notes"
+            id="notes"
+            cols="6"
+            placeholder="Notes"
+            class="py-6 px-4 placeholder:text-xl placeholder:font-semibold rounded-md bg-gray-200"
+          ></textarea>
+        </div>
+        <div>
+          <button
+            class="flex w-full bg-teal-900 text-white items-center justify-center rounded-md py-2 gap-2"
+          >
+            <i href="./index.html" class="fa fa-plus"></i>
+            Add Task
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
