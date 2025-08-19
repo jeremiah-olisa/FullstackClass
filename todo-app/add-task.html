@@ -11,7 +11,9 @@
     />
   </head>
   <body class="bg-white min-h-screen p-6">
-    <div class="max-w-md mx-auto space-y-6">
+    <div
+      class="max-w-md mx-auto space-y-6 shadow-xl rounded-2xl bg-teal-900 px-3 py-4"
+    >
       <!-- Header -->
       <header class="flex gap-3 items-center justify-center relative p-0">
         <h3 class="font-bold text-lg">Add task</h3>
@@ -39,9 +41,93 @@
             class="py-6 px-4 placeholder:text-xl placeholder:font-semibold rounded-md bg-gray-200"
           ></textarea>
         </div>
-        <div>
+
+        <!-- NAVIGATION BAR -->
+        <!-- NAV 1 -->
+        <div class="flex gap-2 bg-gray-200 py-2 px-3 rounded-md">
+          <div>
+            <i
+              class="fa-solid fa-calendar rounded-md bg-teal-600 px-3 py-3"
+            ></i>
+          </div>
+          <div class="flex justify-between space-x-56 text-2x">
+            <div class="gap-4 font">
+              <p class="font-bold">Due</p>
+              <h4>Tomorrow</h4>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-toggle-on rounded-md bg-teal-600 py-3 px-3"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAV 2 -->
+        <div class="flex flex-col py-1 px-1 bg-gray-200 rounded-md gap-2">
+          <div class="grid grid-cols-7 rounded-md bg-white-600 py-1 px-1">
+            <div class="font-bold">
+              <h4>MON</h4>
+              <p>13</p>
+            </div>
+            <div>
+              <h4 class="font-bold">TUE</h4>
+              <p>14</p>
+            </div>
+            <div class="font-bold rounded-md bg-teal-600">
+              <h4>WED</h4>
+              <p>15</p>
+            </div>
+            <div class="font-bold">
+              <h4>TH</h4>
+              <p>16</p>
+            </div>
+            <div class="font-bold">
+              <h4>FRI</h4>
+              <p>17</p>
+            </div>
+            <div class="font-bold">
+              <h4>SAT</h4>
+              <p>18</p>
+            </div>
+            <div class="font-bold">
+              <h4>SUN</h4>
+              <p>19</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAV 3 -->
+      <div class="flex gap-2 bg-gray-200 py-2 px-3 rounded-md">
+          <div>
+            <i
+              class="fa-solid fa-clock rounded-md bg-teal-600 px-3 py-3"
+            ></i>
+          </div>
+          <div class="flex justify-between space-x-64 text-2x">
+            <div class="gap-4 font flex justify-center align-text-bottom font-bold">
+            TIME
+             </div>
+            <div>
+              <i
+                class="fa-solid fa-toggle-off rounded-md bg-teal-600 py-3 px-3"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAV 4 -->
+        <div class="flex gap-2 py-2 px-3 bg-gray-200 rounded-md">
+          <div>
+            <i class="fas fa-folder rounded-md bg-teal-600 px-3 py-3"></i>
+          </div>
+          <div><p class="bg-gray-200 font-bold">Personal</p></div>
+          </div>
+
+        <!-- BUTTON -->
           <button
-            class="flex w-full bg-teal-900 text-white items-center justify-center rounded-md py-2 gap-2"
+          div
+            class="flex w-full bg-tea ms-600 text-black font-bold items-center justify-center rounded-md py-2 gap-1 bg-gray-200 "
           >
             <i href="./index.html" class="fa fa-plus"></i>
             Add Task
