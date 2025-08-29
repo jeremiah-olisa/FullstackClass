@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./js/shopping-list.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">🛒 Shopping List</h1>
+            <p class="text-gray-600">Keep track of your shopping items</p>
+        </div>
+
+        <!-- Add Item Form -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-6 border border-gray-100">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Add New Item</h2>
+            <div class="flex gap-3">
+                <input 
+                    type="text" 
+                    id="itemInput"
+                    placeholder="Enter shopping item..." 
+                    class="flex-1 px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                >
+                <button 
+                    id="addBtn"
+                    onclick="addItem()"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95"
+                >
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <!-- Shopping List -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-gray-50 to-gray-100 px-6 py-4 border-b border-gray-200">
+                <h2 class="text-lg font-semibold text-gray-800">Your Items</h2>
+                <p class="text-sm text-gray-600 mt-1">
+                    <span id="itemCount"></span> items in your list
+                </p>
+            </div>
+            
+            <ul id="shoppingList" class="divide-y divide-gray-100">
+
+            </ul>
+        </div>
+
+        <!-- Empty State (hidden by default) -->
+        <div id="emptyState" class="hidden bg-white rounded-2xl shadow-lg p-8 text-center border border-gray-100">
+            <div class="text-gray-400 mb-4">
+                <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path>
+                </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-600 mb-2">Your shopping list is empty</h3>
+            <p class="text-gray-500">Add your first item to get started!</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8">
+            <p class="text-gray-500 text-sm">💡 Tip: Click the delete icon to remove items</p>
+        </div>
+    </div>
+</body>
+</html>
